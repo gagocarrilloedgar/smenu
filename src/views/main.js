@@ -203,7 +203,7 @@ export default function Pricing() {
         >
           Smart Menu es una carta interactiva online que te permite poder
           garantizar las medidas de seguridad en tu establecimiento de forma
-          sencilla y económica y a la vez moderniza tu bar o restaurante.
+          sencilla y económica y a la vez moderniza tu bar o restaurante
         </Typography>
         <Button
           color="primary"
