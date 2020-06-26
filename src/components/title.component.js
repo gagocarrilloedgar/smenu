@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MediaControlCard() {
+export default function MediaControlCard({bar}) {
   const classes = useStyles();
   const theme = useTheme();
 
@@ -36,7 +36,7 @@ export default function MediaControlCard() {
     <Card className={classes.root} raised>
       <CardMedia
         className={classes.cover}
-        image="https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        image={bar.foto}
         title="Live from space album cover"
       />
       <div className={classes.details}>
@@ -49,7 +49,7 @@ export default function MediaControlCard() {
               fontFamily: `"Montserrat",sans-serif`,
             }}
           >
-            Nombre del bar
+            {bar.nombre}
           </Typography>
           <Typography
             variant="subtitle1"
@@ -61,7 +61,7 @@ export default function MediaControlCard() {
               fontFamily: `"Montserrat",sans-serif`,
             }}
           >
-            Calle
+            {bar.direccion}
           </Typography>
           <Typography
             variant="subtitle1"
@@ -73,7 +73,7 @@ export default function MediaControlCard() {
               fontFamily: `"Montserrat",sans-serif`,
             }}
           >
-            Teléfono
+            {bar.tlf}
           </Typography>
         </CardContent>
       </div>
