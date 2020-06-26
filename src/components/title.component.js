@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     borderRadius: 30,
-    margin:10,
+    margin: 10,
+    height: 100,
   },
   details: {
     display: "flex",
@@ -23,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     flex: "1 0 auto",
   },
   cover: {
-    width: 100,
+    width: 125,
   },
 }));
 
@@ -40,20 +41,37 @@ export default function MediaControlCard() {
       />
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5" style={{ textAlign: "left" }}>
+          <Typography
+            style={{
+              textAlign: "left",
+              fontSize: 15,
+              fontWeight: 600,
+              fontFamily: `"Montserrat",sans-serif`,
+            }}
+          >
             Nombre del bar
           </Typography>
           <Typography
             variant="subtitle1"
             color="textSecondary"
-            style={{ textAlign: "left" }}
+            style={{
+              textAlign: "left",
+              fontSize: 12,
+              fontWeight: 500,
+              fontFamily: `"Montserrat",sans-serif`,
+            }}
           >
             Calle
           </Typography>
           <Typography
             variant="subtitle1"
             color="textSecondary"
-            style={{ textAlign: "left" }}
+            style={{
+              textAlign: "left",
+              fontSize: 12,
+              fontWeight: 500,
+              fontFamily: `"Montserrat",sans-serif`,
+            }}
           >
             Teléfono
           </Typography>
