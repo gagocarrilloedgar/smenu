@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
@@ -210,16 +210,21 @@ export default function ControlledExpansionPanels() {
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
+  var heightScreen;
+
+  useEffect(() => {
+    heightScreen = window.outerHeight;
+    
+  }, [window.outerHeight])
 
   
 
   return (
     <Grid
-      container
       style={{
         padding: "10px",
-        background:"#ffb199",
-        height:window.innerHeight
+        background: "#ffb199",
+        height: "1000px",
       }}
     >
       <Grid container justify="center" style={{ padding: "10px" }}>
