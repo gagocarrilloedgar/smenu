@@ -5,7 +5,7 @@ import CartaOnlineTest from "./views/./BarTest/testBar1";
 import { TestBarContextProvider } from "./views/BarTest/testbar1provider";
 function App() {
   return (
-    <div className="App">
+    <div>
       <Route path="" component={IndexPage} />
       <TestBarContextProvider>
         <Route path="/dolcevitablanes" component={CartaOnlineTest} />

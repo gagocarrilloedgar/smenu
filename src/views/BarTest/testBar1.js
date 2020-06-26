@@ -18,6 +18,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
+    height: "100%",
     alignItems: "center",
   },
   heading: {
@@ -210,12 +211,21 @@ export default function ControlledExpansionPanels() {
     setExpanded(isExpanded ? panel : false);
   };
 
+  
+
   return (
-    <Grid style={{ padding: "10px", margin: "10px" }}>
-      <Grid container container justify="center" style={{ padding: "10px" }}>
+    <Grid
+      container
+      style={{
+        padding: "10px",
+        background:"#ffb199",
+        height:window.innerHeight
+      }}
+    >
+      <Grid container justify="center" style={{ padding: "10px" }}>
         <MediaControlCard bar={info} />
       </Grid>
-      <Grid container container justify="center">
+      <Grid container justify="center">
         <Grid item xs={11} spacing={10} justify="center">
           {carta.map((item, index) => (
             <ExpansionPanel

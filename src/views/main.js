@@ -16,6 +16,7 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import logo from "../../src/smenu.png";
 import ContactButton from "../components/contact.component";
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -197,12 +198,20 @@ export default function Pricing() {
           align="center"
           color="textSecondary"
           component="p"
+          paragraph
           style={{ fontFamily: `"Montserrat",sans-serif` }}
         >
           Smart Menu es una carta interactiva online que te permite poder
           garantizar las medidas de seguridad en tu establecimiento de forma
           sencilla y económica y a la vez modernizando tu bar o restaurante.
         </Typography>
+        <Button
+          color="primary"
+          variant="contained"
+          onClick={() => (window.location = "/dolcevitablanes")}
+        >
+          Ver modelo
+        </Button>
       </Container>
       {/* End hero unit */}
       <Container maxWidth="md" component="main">
