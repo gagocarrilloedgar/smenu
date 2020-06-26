@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Route path="" component={IndexPage} />
       <TestBarContextProvider>
-        <Route path="/dolceVittaBlanes" component={CartaOnlineTest} />
+        <Route path="/dolcevitablanes" component={CartaOnlineTest} />
       </TestBarContextProvider>
     </div>
   );

@@ -5,10 +5,15 @@ import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { Grid, Avatar, Paper, Fab } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { blue } from "@material-ui/core/colors";
 import MediaControlCard from "../../components/title.component";
 import { TestBarContext } from "./testbar1provider";
+import {
+  WhatsappShareButton,
+  WhatsappIcon,
+  WhatsappShareCount,
+} from "react-share";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -249,6 +254,20 @@ export default function ControlledExpansionPanels() {
             </ExpansionPanel>
           ))}
         </Grid>
+        <WhatsappShareButton
+          style={{
+            margin: 20,
+            top: "auto",
+            right: 20,
+            bottom: 20,
+            left: "auto",
+            position: "fixed",
+          }}
+          url={window.location.href}
+        >
+          {" "}
+          <WhatsappIcon size={40} round={true} />
+        </WhatsappShareButton>
       </Grid>
       {/*<Fab
         color="primary"
