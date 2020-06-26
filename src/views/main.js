@@ -205,13 +205,15 @@ export default function Pricing() {
           garantizar las medidas de seguridad en tu establecimiento de forma
           sencilla y económica y a la vez moderniza tu bar o restaurante.
         </Typography>
-        <Button
-          color="primary"
-          variant="contained"
-          onClick={() => (window.location = "/dolcevitablanes")}
-        >
-          Ver modelo
-        </Button>
+        <Grid xs item>
+          <Button
+            color="primary"
+            variant="contained"
+            onClick={() => (window.location = "/dolcevitablanes")}
+          >
+            Ver modelo
+          </Button>
+        </Grid>
       </Container>
       {/* End hero unit */}
       <Container maxWidth="md" component="main">
