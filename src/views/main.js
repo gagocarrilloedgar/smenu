@@ -209,9 +209,9 @@ export default function Pricing() {
           <Button
             color="primary"
             variant="contained"
-            onClick={() => (window.location = "/dolcevitablanes")}
+            onClick={() => (window.location = "/demo")}
           >
-            Ver modelo
+            Ver demo
           </Button>
         </Grid>
       </Container>

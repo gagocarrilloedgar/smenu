@@ -59,7 +59,7 @@ export default function ControlledExpansionPanels() {
       tipo: "Pizzas",
       contenido: [
         {
-          titulo: "Dolce vita ",
+          titulo: "Dolce ",
           descripcion:
             "Champiñones, Salami, Tomate, Cebolla, Aceitunas negras, Pimiento Rojo, Mozzarella y Orégano",
           precio: "9.75",
@@ -200,7 +200,7 @@ export default function ControlledExpansionPanels() {
   ]);
 
   const [info, setInfo] = useState({
-    nombre: "Dolce Vitta Blanes",
+    nombre: "Pizzeria",
     direccion: "Carrer Josep Trueta, 8, 17300 Blanes, Girona",
     tlf: "972 33 47 92",
     foto:
