@@ -53,12 +53,12 @@ export default function ControlledExpansionPanels() {
   };
 
   return (
-    <Grid style={{ padding: "30px", margin: "30px" }}>
+    <Grid style={{ padding: "10px", margin: "10px" }}>
       <Grid container container justify="center" style={{ padding: "10px" }}>
         <MediaControlCard />
       </Grid>
       <Grid container container justify="center">
-        <Grid item xs={10} spacing={10} justify="center">
+        <Grid item xs={11} spacing={10} justify="center">
           <ExpansionPanel
             elevation={5}
             expanded={expanded === "panel1"}
